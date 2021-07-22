@@ -17,15 +17,18 @@ const Footer = () => {
 
 			<FooterInnerContainer>
 				<div>
-					<p>Designo Central Office</p>
-					<p>3886 Wellington Street</p>
-					<p>Toronto, Ontario M9C 3J5</p>
+					<p>
+						Designo Central Office <br />
+						3886 Wellington Street <br />
+						Toronto, Ontario M9C 3J5
+					</p>
 				</div>
 
 				<div>
-					<p>Contact Us (Central Office)</p>
-					<p>P: +1 253-863-8967</p>
-					<p>M: contact@designo.co</p>
+					<p>
+						Contact Us (Central Office) <br /> P: +1 253-863-8967 <br /> M:
+						contact@designo.com
+					</p>
 				</div>
 
 				<StyledLogos>
