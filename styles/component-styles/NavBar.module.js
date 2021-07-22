@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const NavContainer = styled.div`
+	margin: 0 auto;
+	max-width: 1111px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	padding-top: 50px;
 	font-family: "Jost";

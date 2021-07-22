@@ -2,7 +2,7 @@ import { NavContainer } from "../../../styles/component-styles/NavBar.module";
 import Image from "next/image";
 import Link from "next/link";
 
-const NavBar = () => {
+const NavBarLight = () => {
 	return (
 		<NavContainer>
 			<div>
@@ -28,4 +28,4 @@ const NavBar = () => {
 	);
 };
 
-export default NavBar;
+export default NavBarLight;
