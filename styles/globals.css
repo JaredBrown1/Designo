@@ -1,16 +1,24 @@
+/* Font family */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap");
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: "Jost", sans-serif;
+	--col-primary-one: #e7816b;
+	--col-primary-two: #1d1c1e;
+	--col-primary-three: #ffffff;
+	--col-secondary-one: #ffad9b;
+	--col-seconday-two: #333136;
+	--col-secondary-three: #f1f3f5;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
