@@ -36,4 +36,8 @@ export const StyledLogos = styled.div`
 
 export const StyledLogo = styled.div`
 	padding-right: 20px;
+	&:hover {
+		cursor: pointer;
+		color: var(--col-secondary-one);
+	}
 `;
