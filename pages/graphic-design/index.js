@@ -6,6 +6,8 @@ import DesignCard from "../../src/components/design/DesignCard";
 import Image1 from "../../public/design-images/image-change.jpg";
 import Image2 from "../../public/design-images/image-boxed-water.jpg";
 import Image3 from "../../public/design-images/image-science.jpg";
+import DesignNextApp from "../../src/components/design/DesignNextApp";
+import DesignNextWeb from "../../src/components/design/DesignNextWeb";
 
 const GraphicDesign = () => {
 	return (
@@ -19,7 +21,12 @@ const GraphicDesign = () => {
 			/>
 
 			<div
-				style={{ display: "flex", justifyContent: "center", padding: "10px" }}
+				style={{
+					display: "flex",
+					justifyContent: "center",
+					padding: "10px",
+					marginBottom: "80px",
+				}}
 			>
 				<DesignCard
 					image={Image1}
@@ -29,16 +36,28 @@ const GraphicDesign = () => {
 				/>
 				<DesignCard
 					image={Image2}
-					title="TIM BROWN"
-					subtitleOne="A book cover designed for Tim Brown's"
-					subtitleTwo="new release, 'Change'"
+					title="BOXED WATER"
+					subtitleOne="A simple packaging concept made for"
+					subtitleTwo="Boxed Water"
 				/>
 				<DesignCard
 					image={Image3}
-					title="TIM BROWN"
-					subtitleOne="A book cover designed for Tim Brown's"
-					subtitleTwo="new release, 'Change'"
+					title="SCIENCE!"
+					subtitleOne="A poster made in collaboration with the"
+					subtitleTwo="Federal Art Project"
 				/>
+			</div>
+
+			<div
+				style={{
+					display: "flex",
+					justifyContent: "center",
+					paddingRight: "25px",
+					paddingBottom: "80px",
+				}}
+			>
+				<DesignNextWeb />
+				<DesignNextApp />
 			</div>
 
 			<FooterHeader />

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const TitleContainer = styled.div`
 	margin: 0 auto;
 	margin-top: 50px;
+	margin-bottom: 80px;
 	border-radius: 10px;
 	background-image: url("/Group 28.png");
 	text-align: center;
