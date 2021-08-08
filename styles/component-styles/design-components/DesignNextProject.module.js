@@ -64,7 +64,7 @@ export const DesignNextWebCont = styled.div`
 	}
 `;
 
-export const DesignNextGrahpicCont = styled.div`
+export const DesignNextGraphicCont = styled.div`
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url("/image-graphic-design.jpg");
 	color: var(--col-primary-three);
