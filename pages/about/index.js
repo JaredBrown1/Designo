@@ -4,6 +4,7 @@ import NavBarLight from "../../src/components/nav-bar/NavBarLight";
 import AboutTitle from "../../src/components/about/AboutTitle";
 import AboutTop from "../../src/components/about/AboutTop";
 import AboutMiddle from "../../src/components/about/AboutMiddle";
+import AboutBottom from "../../src/components/about/AboutBottom";
 
 const About = () => {
 	return (
@@ -15,6 +16,8 @@ const About = () => {
 			<AboutTop />
 
 			<AboutMiddle />
+
+			<AboutBottom />
 
 			<FooterHeader />
 			<Footer />

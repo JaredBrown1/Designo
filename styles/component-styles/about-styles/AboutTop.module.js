@@ -23,4 +23,9 @@ export const TextContainer = styled.div`
 	width: 635px;
 	text-align: left;
 	padding-left: 100px;
+
+	h1 {
+		color: var(--col-primary-one);
+		font-weight: 400;
+	}
 `;
