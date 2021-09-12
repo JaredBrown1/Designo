@@ -7,6 +7,14 @@ export const HomeMiddleContainer = styled.div`
 	margin-bottom: 120px;
 	display: flex;
 	color: var(--col-primary-three);
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Styles */
+		flex-direction: column;
+		margin-right: 20px;
+		margin-top: 100px;
+		align-items: center;
+	}
 `;
 
 export const WebDesign = styled.div`
@@ -35,6 +43,15 @@ export const WebDesign = styled.div`
 				rgba(231, 129, 107, 0.8) 100%
 			),
 			url("/image-web-design-large.jpg");
+	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Styles */
+		width: 689px;
+		height: 200px;
+		margin-left: 20px;
+		margin-bottom: 23px;
+		background: url("/tablet/Bitmaptablet.jpeg");
 	}
 `;
 
@@ -67,6 +84,13 @@ export const AppDesign = styled.div`
 			),
 			url("/image-app-design.jpg");
 	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Styles */
+		width: 689px;
+		height: 200px;
+		background: url("/tablet/Bitmap2tablet.jpeg");
+	}
 `;
 export const GraphicDesign = styled.div`
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -95,5 +119,12 @@ export const GraphicDesign = styled.div`
 				rgba(231, 129, 107, 0.8) 100%
 			),
 			url("/image-graphic-design.jpg");
+	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Styles */
+		width: 689px;
+		height: 200px;
+		background: url("/tablet/Bitmap3.jpeg");
 	}
 `;

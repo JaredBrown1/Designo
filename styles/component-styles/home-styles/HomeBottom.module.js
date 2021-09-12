@@ -17,4 +17,26 @@ export const HomeBottomContainer = styled.div`
 	p {
 		font-size: 16px;
 	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Styles */
+		flex-direction: column;
+		align-items: center;
+		text-align: left;
+
+		h1 {
+			padding-left: 20px;
+		}
+
+		p {
+			width: 439px;
+			padding-left: 20px;
+		}
+	}
+`;
+
+export const HomeBottomSubContainer = styled.div`
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		display: flex;
+	}
 `;

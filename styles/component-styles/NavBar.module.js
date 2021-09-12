@@ -16,4 +16,9 @@ export const NavContainer = styled.div`
 	a:hover {
 		text-decoration: underline;
 	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		width: 689px;
+		padding-bottom: 50px;
+	}
 `;

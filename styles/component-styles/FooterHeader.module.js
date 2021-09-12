@@ -12,10 +12,22 @@ export const FooterHeaderContainer = styled.div`
 	margin-bottom: -70px;
 	position: relative;
 	h1 {
-		font-weight: 500;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 40px;
 	}
 	p {
 		font-weight: 400;
+	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Styles */
+		background-image: url("/tablet/Group28tablet.png");
+		max-width: 690px;
+		max-height: 350px;
+		flex-direction: column;
+		text-align: center;
+		border-radius: 10px;
 	}
 `;
 

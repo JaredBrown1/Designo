@@ -11,6 +11,11 @@ export const FooterContainer = styled.div`
 	p {
 		color: gray;
 	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Styles */
+		width: 100%;
+	}
 `;
 
 export const NavContainer = styled.div`
@@ -27,6 +32,11 @@ export const FooterInnerContainer = styled.div`
 	align-items: center;
 	padding-top: 30px;
 	border-top: 1px solid gray;
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Styles */
+		width: 690px;
+	}
 `;
 
 export const StyledLogos = styled.div`
