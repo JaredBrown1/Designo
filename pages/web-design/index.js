@@ -12,6 +12,8 @@ import Image6 from "../../public/design-images/image-camp.jpg";
 import DesignNextApp from "../../src/components/design/DesignNextApp";
 import DesignNextGraphic from "../../src/components/design/DesignNextGraphic";
 
+import { CardContainer } from "../../styles/component-styles/design-components/WebDesign.module";
+
 const WebDesign = () => {
 	return (
 		<div>
@@ -23,13 +25,7 @@ const WebDesign = () => {
 					subtitleTwo="and bring memorable brand experiences."
 				/>
 
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						padding: "10px",
-					}}
-				>
+				<CardContainer>
 					<DesignCard
 						image={Image1}
 						title="EXPRESS"
@@ -48,14 +44,9 @@ const WebDesign = () => {
 						subtitleOne="A state-of-the-art music player with"
 						subtitleTwo="high-resolution audio and DSP effects"
 					/>
-				</div>
+				</CardContainer>
 
-				<div
-					style={{
-						display: "flex",
-						marginBottom: "80px",
-					}}
-				>
+				<CardContainer>
 					<DesignCard
 						image={Image4}
 						title="BUILDER"
@@ -74,7 +65,7 @@ const WebDesign = () => {
 						subtitleOne="Get expert training in coding, data,"
 						subtitleTwo="design, and digital marketing"
 					/>
-				</div>
+				</CardContainer>
 
 				<div
 					style={{

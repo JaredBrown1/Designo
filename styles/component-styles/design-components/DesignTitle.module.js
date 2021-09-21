@@ -25,4 +25,10 @@ export const TitleContainer = styled.div`
 	p {
 		line-height: 0px;
 	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Styles */
+		width: 689px;
+		height: 252px;
+	}
 `;

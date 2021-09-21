@@ -35,4 +35,11 @@ export const CardContainer = styled.div`
 			color: var(--col-primary-three);
 		}
 	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Styles */
+		margin: 0px;
+		width: 689px;
+		height: 310px;
+	}
 `;
