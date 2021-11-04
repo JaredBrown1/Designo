@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Image from "next/image";
+
 import NavBar from "../../src/components/nav-bar/NavBarLight";
 import Footer from "../../src/components/footer/Footer";
 import FooterHeader from "../../src/components/footer-header/FooterHeader";
@@ -8,13 +11,22 @@ import Image2 from "../../public/design-images/image-eyecam.jpg";
 import Image3 from "../../public/design-images/image-faceit.jpg";
 import Image4 from "../../public/design-images/image-todo.jpg";
 import Image5 from "../../public/design-images/image-loopstudios.jpg";
-import DesignNextWeb from "../../src/components/design/DesignNextWeb";
-import DesignNextGraphic from "../../src/components/design/DesignNextGraphic";
+
+import {
+	WebDesign,
+	GraphicDesign,
+} from "../../styles/component-styles/home-styles/HomeMiddle.module";
+
+import {
+	AppDesignContainer,
+	CardContainer,
+	NextPageContainer,
+} from "../../styles/component-styles/design-components/AppDesign.module";
 
 const AppDesign = () => {
 	return (
 		<div>
-			<div style={{ margin: "0 auto", width: "1120px" }}>
+			<AppDesignContainer>
 				<NavBar />
 				<DesignTitle
 					title="App Design"
@@ -22,13 +34,7 @@ const AppDesign = () => {
 					subtitleTwo="to your customers right at their fingertips."
 				/>
 
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						padding: "10px",
-					}}
-				>
+				<CardContainer>
 					<DesignCard
 						image={Image1}
 						title="AIRFILTER"
@@ -47,14 +53,9 @@ const AppDesign = () => {
 						subtitleOne="Get to meet your favorite internet"
 						subtitleTwo="superstar with the faceit app"
 					/>
-				</div>
+				</CardContainer>
 
-				<div
-					style={{
-						display: "flex",
-						marginBottom: "80px",
-					}}
-				>
+				<CardContainer>
 					<DesignCard
 						image={Image4}
 						title="TODO"
@@ -67,20 +68,46 @@ const AppDesign = () => {
 						subtitleOne="A VR experience app made for"
 						subtitleTwo="Loopstudios"
 					/>
-				</div>
+				</CardContainer>
 
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						paddingRight: "25px",
-						paddingBottom: "80px",
-					}}
-				>
-					<DesignNextGraphic />
-					<DesignNextWeb />
-				</div>
-			</div>
+				<NextPageContainer>
+					<Link href="/graphic-design">
+						<a>
+							<GraphicDesign>
+								<h1>GRAPHIC DESIGN</h1>
+
+								<p>
+									VIEW PROJECTS {"            "}
+									<Image
+										src="/icon-right-arrow.svg"
+										alt="arrow"
+										width={6}
+										height={12}
+									/>
+								</p>
+							</GraphicDesign>
+						</a>
+					</Link>
+
+					<Link href="/web-design">
+						<a>
+							<WebDesign>
+								<h1>WEB DESIGN</h1>
+
+								<p>
+									VIEW PROJECTS {"            "}
+									<Image
+										src="/icon-right-arrow.svg"
+										alt="arrow"
+										width={6}
+										height={12}
+									/>
+								</p>
+							</WebDesign>
+						</a>
+					</Link>
+				</NextPageContainer>
+			</AppDesignContainer>
 
 			<FooterHeader />
 			<Footer />

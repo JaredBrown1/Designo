@@ -28,6 +28,7 @@ export const WebDesign = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	color: white;
 	h1 {
 		font-size: 40px;
 		font-weight: 400;
@@ -68,6 +69,7 @@ export const AppDesign = styled.div`
 	align-items: center;
 	margin-left: 20px;
 	margin-bottom: 23px;
+	color: white;
 	h1 {
 		font-size: 40px;
 		font-weight: 400;
@@ -105,6 +107,7 @@ export const GraphicDesign = styled.div`
 	justify-content: center;
 	align-items: center;
 	margin-left: 20px;
+	color: white;
 	h1 {
 		font-size: 40px;
 		font-weight: 400;
@@ -127,6 +130,7 @@ export const GraphicDesign = styled.div`
 		color: white;
 		width: 689px;
 		height: 200px;
+		margin-bottom: 20px;
 		background: url("/tablet/Bitmap3.jpeg");
 	}
 `;

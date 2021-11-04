@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const WebDesignContainer = styled.div`
+export const AppDesignContainer = styled.div`
 	margin: 0 auto;
 	width: 1120px;
 
