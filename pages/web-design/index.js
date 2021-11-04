@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import NavBar from "../../src/components/nav-bar/NavBarLight";
 import Footer from "../../src/components/footer/Footer";
 import FooterHeader from "../../src/components/footer-header/FooterHeader";
@@ -12,12 +14,21 @@ import Image6 from "../../public/design-images/image-camp.jpg";
 import DesignNextApp from "../../src/components/design/DesignNextApp";
 import DesignNextGraphic from "../../src/components/design/DesignNextGraphic";
 
-import { CardContainer } from "../../styles/component-styles/design-components/WebDesign.module";
+import {
+	AppDesign,
+	GraphicDesign,
+} from "../../styles/component-styles/home-styles/HomeMiddle.module";
+
+import {
+	WebDesignContainer,
+	CardContainer,
+	NextPageContainer,
+} from "../../styles/component-styles/design-components/WebDesign.module";
 
 const WebDesign = () => {
 	return (
 		<div>
-			<div style={{ margin: "0 auto", width: "1120px" }}>
+			<WebDesignContainer>
 				<NavBar />
 				<DesignTitle
 					title="Web Design"
@@ -67,18 +78,36 @@ const WebDesign = () => {
 					/>
 				</CardContainer>
 
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						paddingRight: "25px",
-						paddingBottom: "80px",
-					}}
-				>
-					<DesignNextApp />
-					<DesignNextGraphic />
-				</div>
-			</div>
+				<NextPageContainer>
+					<AppDesign>
+						<h1>APP DESIGN</h1>
+
+						<p>
+							VIEW PROJECTS {"            "}
+							<Image
+								src="/icon-right-arrow.svg"
+								alt="arrow"
+								width={6}
+								height={12}
+							/>
+						</p>
+					</AppDesign>
+
+					<GraphicDesign>
+						<h1>GRAPHIC DESIGN</h1>
+
+						<p>
+							VIEW PROJECTS {"            "}
+							<Image
+								src="/icon-right-arrow.svg"
+								alt="arrow"
+								width={6}
+								height={12}
+							/>
+						</p>
+					</GraphicDesign>
+				</NextPageContainer>
+			</WebDesignContainer>
 
 			<FooterHeader />
 			<Footer />

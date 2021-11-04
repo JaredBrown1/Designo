@@ -41,5 +41,17 @@ export const CardContainer = styled.div`
 		margin: 0px;
 		width: 689px;
 		height: 310px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 20px;
+
+		h1 {
+			padding-left: 50px;
+		}
+
+		p {
+			padding-left: 50px;
+		}
 	}
 `;

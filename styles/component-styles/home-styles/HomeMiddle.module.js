@@ -87,6 +87,7 @@ export const AppDesign = styled.div`
 
 	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 		/* Styles */
+		color: white;
 		width: 689px;
 		height: 200px;
 		background: url("/tablet/Bitmap2tablet.jpeg");
@@ -123,6 +124,7 @@ export const GraphicDesign = styled.div`
 
 	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 		/* Styles */
+		color: white;
 		width: 689px;
 		height: 200px;
 		background: url("/tablet/Bitmap3.jpeg");
