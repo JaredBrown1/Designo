@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Image from "next/image";
+
 import NavBar from "../../src/components/nav-bar/NavBarLight";
 import Footer from "../../src/components/footer/Footer";
 import FooterHeader from "../../src/components/footer-header/FooterHeader";
@@ -6,12 +9,22 @@ import DesignCard from "../../src/components/design/DesignCard";
 import Image1 from "../../public/design-images/image-change.jpg";
 import Image2 from "../../public/design-images/image-boxed-water.jpg";
 import Image3 from "../../public/design-images/image-science.jpg";
-import DesignNextApp from "../../src/components/design/DesignNextApp";
-import DesignNextWeb from "../../src/components/design/DesignNextWeb";
+
+import {
+	AppDesign,
+	WebDesign,
+} from "../../styles/component-styles/home-styles/HomeMiddle.module";
+
+import {
+	GraphicDesignContainer,
+	CardContainer,
+	NextPageContainer,
+} from "../../styles/component-styles/design-components/GraphicDesign.module";
+import { Next } from "react-bootstrap/esm/PageItem";
 
 const GraphicDesign = () => {
 	return (
-		<div>
+		<GraphicDesignContainer>
 			<NavBar />
 			<DesignTitle
 				title="Graphic Design"
@@ -20,7 +33,7 @@ const GraphicDesign = () => {
                 meet your business objectives."
 			/>
 
-			<div
+			<CardContainer
 				style={{
 					display: "flex",
 					justifyContent: "center",
@@ -46,9 +59,9 @@ const GraphicDesign = () => {
 					subtitleOne="A poster made in collaboration with the"
 					subtitleTwo="Federal Art Project"
 				/>
-			</div>
+			</CardContainer>
 
-			<div
+			<NextPageContainer
 				style={{
 					display: "flex",
 					justifyContent: "center",
@@ -56,13 +69,46 @@ const GraphicDesign = () => {
 					paddingBottom: "80px",
 				}}
 			>
-				<DesignNextWeb />
-				<DesignNextApp />
-			</div>
+				<Link href="/web-design">
+					<a>
+						<WebDesign>
+							<h1>WEB DESIGN</h1>
+
+							<p>
+								VIEW PROJECTS {"            "}
+								<Image
+									src="/icon-right-arrow.svg"
+									alt="arrow"
+									width={6}
+									height={12}
+								/>
+							</p>
+						</WebDesign>
+					</a>
+				</Link>
+
+				<Link href="/app-design">
+					<a>
+						<AppDesign>
+							<h1>APP DESIGN</h1>
+
+							<p>
+								VIEW PROJECTS {"            "}
+								<Image
+									src="/icon-right-arrow.svg"
+									alt="arrow"
+									width={6}
+									height={12}
+								/>
+							</p>
+						</AppDesign>
+					</a>
+				</Link>
+			</NextPageContainer>
 
 			<FooterHeader />
 			<Footer />
-		</div>
+		</GraphicDesignContainer>
 	);
 };
 
