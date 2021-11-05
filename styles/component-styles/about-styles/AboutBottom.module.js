@@ -15,10 +15,22 @@ export const AboutBottomContainer = styled.div`
 		color: var(--col-primary-one);
 		font-weight: 400;
 	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Styles */
+		width: 689px;
+		flex-direction: column-reverse;
+	}
 `;
 
 export const TextContainer = styled.div`
 	padding-right: 100px;
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Styles */
+		text-align: center;
+		padding-right: 0px;
+	}
 `;
 
 export const ImageContainer = styled.div`
@@ -29,4 +41,13 @@ export const ImageContainer = styled.div`
 	width: 476px;
 	height: 640px;
 	margin-right: -100px;
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Styles */
+		background-image: url("/image-real-deal-tab.jpg");
+		width: 689px;
+		margin-right: 0px;
+		border-top-left-radius: 20px;
+		border-bottom-right-radius: 0px;
+	}
 `;

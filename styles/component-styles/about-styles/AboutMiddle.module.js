@@ -9,6 +9,13 @@ export const AboutMiddleContainer = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* Styles */
+		width: 689px;
+		height: 1230px;
+		flex-direction: column;
+	}
 `;
 
 export const MiddleCities = styled.div`
